@@ -7,18 +7,19 @@ async function bootstrap() {
 }
 bootstrap();
 
-// const list: string[] = ['a', 'b', 'c'];
+// const inputArray = [
+//   { a: '111', _a: '222' },
+//   { b: '333', _b: '444' },
+//   { c: '555', _c: '666' },
+// ];
 
-// const result: string = list.reduce((acc: string, current: string, index: number) => {
-//   if (index === 0) {
-//     return `[data-date='${current}']`;
-//   } else {
-//     return `${acc},[data-date='${current}']`;
-//   }
-// }, '');
+// const resultArray = inputArray.map(obj =>
+//   Object.entries(obj).reduce((acc, [key, value]) => {
+//     if (!key.startsWith('_')) {
+//       acc[key] = value;
+//     }
+//     return acc;
+//   }, {})
+// );
 
-// console.log(result);
-// const list = ['a', 'b', 'c'];
-
-// const a = '[data-date=' + list.join('],[data-date=') + ']';
-// console.log(a);
+// console.log(resultArray);
